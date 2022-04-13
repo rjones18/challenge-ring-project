@@ -11,3 +11,4 @@ resource "aws_instance" "my_public_server" {
   }
 
 }
+ ######
