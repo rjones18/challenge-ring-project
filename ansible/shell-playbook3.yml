@@ -1,0 +1,8 @@
+---
+- hosts: server2
+  become: true
+  tasks:
+    - name: Update script.sh pt.1
+      ansible.builtin.shell: echo "#!/bin/bash" > script.sh
+    - name: Update script.sh pt.2  
+      ansible.builtin.shell: echo scp -i "~/.ssh/Mackey.pem" test.txt ubuntu@3.82.228.76:/home/ubuntu/ >> script.sh
