@@ -10,13 +10,10 @@ a = 1
 
 # Iterating through the content of the file
 for line in content:
-	
-	for i in line:
-		
-		# Checking for the digit in the string
-		if i.isdigit() == True:
+    # Checking for the digit in the string
+	if line.isdigit() == True:
 			
-			a += int(i)
+		a += int(line)
 
 # Opens and writes to file
 file = open('test.txt', 'w')
